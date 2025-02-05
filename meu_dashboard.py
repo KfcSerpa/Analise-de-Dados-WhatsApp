@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="Dashboard Interativo", layout="wide", page_icon="🔥")
+st.set_page_config(page_title="Kaique Serpa - Projetos", layout="wide", page_icon="📊")
 
 # Estilo customizado para o tema da página
 st.markdown("""
@@ -23,6 +23,7 @@ st.markdown("""
         text-align: left;
         display: flex;
         align-items: center;
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
     }
     .top-left img {
         border-radius: 50%;
@@ -54,6 +55,24 @@ st.markdown("""
     }
     .footer a:hover {
         text-decoration: underline;
+    }
+
+    /* Ajuste para telas menores */
+    @media only screen and (max-width: 600px) {
+        .top-left {
+            position: relative;
+            top: 0;
+            left: 0;
+            flex-direction: column; /* Coloca a imagem e o texto em uma coluna */
+            align-items: center; /* Centraliza o conteúdo */
+            text-align: center;
+        }
+        .top-left img {
+            margin-bottom: 10px; /* Adiciona um espaço entre a imagem e o texto */
+        }
+        .top-left h1 {
+            font-size: 1.2em; /* Reduz o tamanho da fonte no celular */
+        }
     }
     </style>
 """, unsafe_allow_html=True)
