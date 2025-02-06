@@ -56,15 +56,6 @@ st.markdown("""
     .footer a:hover {
         text-decoration: underline;
     }
-    .projetos-title {
-        font-size: 3em;  /* Aumentado consideravelmente o tamanho */
-        font-weight: bold;
-        text-decoration: underline;
-        cursor: pointer;
-        color: #e63946 !important;
-        text-align: center;  /* Centralizado */
-        padding-top: 20px;
-    }
     .projeto-nome {
         font-size: 2em;
         font-weight: bold;
@@ -107,48 +98,46 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Seção Projetos com botão expansível
-with st.expander("📂 **Projetos**", expanded=False):
-    # Nome do projeto
-    st.markdown("""
-        <div class="projeto-nome">
-            Análise de grupo do WhatsApp
-        </div>
-    """, unsafe_allow_html=True)
+# Nome do projeto
+st.markdown("""
+    <div class="projeto-nome">
+        Análise de grupo do WhatsApp
+    </div>
+""", unsafe_allow_html=True)
 
-    # Explicativo do projeto
-    st.markdown("""
-        ### Explicativo do Processo de Análise  
-        Este projeto consiste na análise de dados extraídos de um grupo de WhatsApp. A partir de um arquivo de texto exportado do WhatsApp, foi utilizado Python para tratar e organizar as mensagens em formato tabular. Após o tratamento dos dados, foi gerado um arquivo CSV, que foi importado para o Power BI para criação de visualizações interativas.  
+# Explicativo do projeto
+st.markdown("""
+    ### Explicativo do Processo de Análise  
+    Este projeto consiste na análise de dados extraídos de um grupo de WhatsApp. A partir de um arquivo de texto exportado do WhatsApp, foi utilizado Python para tratar e organizar as mensagens em formato tabular. Após o tratamento dos dados, foi gerado um arquivo CSV, que foi importado para o Power BI para criação de visualizações interativas.  
 
-        **As análises incluem:**  
-        - 📆 Mensagens por ano  
-        - 🗓️ Distribuição de conversas por dia da semana e horário  
-        - 😂 Emojis mais utilizados  
-        - 🗣️ Participantes mais ativos  
-        - 🏛️ Discussões sobre política  
+    **As análises incluem:**  
+    - 📆 Mensagens por ano  
+    - 🗓️ Distribuição de conversas por dia da semana e horário  
+    - 😂 Emojis mais utilizados  
+    - 🗣️ Participantes mais ativos  
+    - 🏛️ Discussões sobre política  
 
-        O projeto visa demonstrar a aplicação de ferramentas de análise de dados e visualização interativa, combinando Python, Power BI e Streamlit para apresentar insights de maneira acessível e interativa.
-    """)
+    O projeto visa demonstrar a aplicação de ferramentas de análise de dados e visualização interativa, combinando Python, Power BI e Streamlit para apresentar insights de maneira acessível e interativa.
+""")
 
-    # Dashboard Power BI
-    st.markdown("### 📊 Dashboard Interativo - Power BI")
-    st.markdown(
-        """
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMmVhNzNiY2QtNDQwNi00MWM4LWFhMWEtNTY1MTgwMzI4ZGFjIiwidCI6IjgxNGUxYjdjLTg5NzUtNDM3Yy05ZTE4LWJhOWY5NzUzZDUwYyJ9" 
-        frameborder="0" allowFullScreen="true" width="100%" height="600"></iframe>
-        """, unsafe_allow_html=True
-    )
+# Dashboard Power BI
+st.markdown("### 📊 Dashboard Interativo - Power BI")
+st.markdown(
+    """
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMmVhNzNiY2QtNDQwNi00MWM4LWFhMWEtNTY1MTgwMzI4ZGFjIiwidCI6IjgxNGUxYjdjLTg5NzUtNDM3Yy05ZTE4LWJhOWY5NzUzZDUwYyJ9" 
+    frameborder="0" allowFullScreen="true" width="100%" height="600"></iframe>
+    """, unsafe_allow_html=True
+)
 
-    # Seção para download do currículo
-    st.markdown("""
-        ### 📄 Baixe Meu Currículo  
-        [Clique aqui para baixar meu currículo](https://github.com/KfcSerpa/Curr-culo/blob/main/Kaique%20Serpa.2025.pdf)
-    """)
+# Seção para download do currículo
+st.markdown("""
+    ### 📄 Baixe Meu Currículo  
+    [Clique aqui para baixar meu currículo](https://github.com/KfcSerpa/Curr-culo/blob/main/Kaique%20Serpa.2025.pdf)
+""")
 
 # Rodapé personalizado
 st.markdown("""
     <div class="footer">
-        <p>Desenvolvido por Kaique | <a href="https://www.linkedin.com/in/kaique-serpa-689387144/" target="_blank">LinkedIn</a></p>
+        <p>Desenvolvido por Kaique Serpa | <a href="https://www.linkedin.com/in/kaique-serpa-689387144/" target="_blank">LinkedIn</a></p>
     </div>
 """, unsafe_allow_html=True)
