@@ -23,7 +23,7 @@ st.markdown("""
         text-align: left;
         display: flex;
         align-items: center;
-        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+        flex-wrap: wrap;
     }
     .top-left img {
         border-radius: 50%;
@@ -56,22 +56,20 @@ st.markdown("""
     .footer a:hover {
         text-decoration: underline;
     }
-
-    /* Ajuste para telas menores */
     @media only screen and (max-width: 600px) {
         .top-left {
             position: relative;
             top: 0;
             left: 0;
-            flex-direction: column; /* Coloca a imagem e o texto em uma coluna */
-            align-items: center; /* Centraliza o conteúdo */
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
         .top-left img {
-            margin-bottom: 10px; /* Adiciona um espaço entre a imagem e o texto */
+            margin-bottom: 10px;
         }
         .top-left h1 {
-            font-size: 1.2em; /* Reduz o tamanho da fonte no celular */
+            font-size: 1.2em;
         }
     }
     </style>
@@ -124,6 +122,14 @@ iframe_code = """
 <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMmVhNzNiY2QtNDQwNi00MWM4LWFhMWEtNTY1MTgwMzI4ZGFjIiwidCI6IjgxNGUxYjdjLTg5NzUtNDM3Yy05ZTE4LWJhOWY5NzUzZDUwYyJ9" frameborder="0" allowFullScreen="true"></iframe>
 """
 st.markdown(iframe_code, unsafe_allow_html=True)
+
+# Seção para download do currículo
+st.markdown("""
+    <div style="text-align: center;">
+        <h2>Baixe Meu Currículo</h2>
+        <p><a href="https://github.com/KfcSerpa/Curr-culo/blob/main/Kaique%20Serpa.2025.pdf" target="_blank">Clique aqui para baixar meu currículo</a></p>
+    </div>
+""", unsafe_allow_html=True)
 
 # Rodapé personalizado
 st.markdown("""
